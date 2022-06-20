@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* common reset */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;}
+i,cite,em,var,address,dfn{font:inherit}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,main,hgroup,menu,nav,section,address{display:block;}
+ol,ul,dl,li{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* font */
+@font-face{
+	font-family:"NanumGothic";
+	font-weight:500;
+	font-style:normal;
+	src:url("/_res/hansang/etc/NanumGothic-Regular.eot");
+	src:url("/_res/hansang/etc/NanumGothic-Regular.eot?#iefix") format('embedded-opentype'),
+		url("/_res/hansang/etc/NanumGothic-Regular.woff2") format('woff2'),
+		url("/_res/hansang/etc/NanumGothic-Regular.woff") format('woff');
+}
+
+@font-face{
+	font-family:"NanumGothic";
+	font-weight:700;
+	font-style:normal;
+	src:url("/_res/hansang/etc/NanumGothic-Bold.eot");
+	src:url("/_res/hansang/etc/NanumGothic-Bold.eot?#iefix") format('embedded-opentype'),
+		url("/_res/hansang/etc/NanumGothic-Bold.woff2") format('woff2'),
+		url("/_res/hansang/etc/NanumGothic-Bold.woff") format('woff');
+}
+
+@font-face{
+	font-family:"NotoSans";
+	font-weight:500;
+	font-style:normal;
+	src:url("/_res/hansang/etc/NotoSans-Light.eot");
+	src:url("/_res/hansang/etc/NotoSans-Light.eot?#iefix") format('embedded-opentype'),
+		url("/_res/hansang/etc/NotoSans-Light.woff2") format('woff2'),
+		url("/_res/hansang/etc/NotoSans-Light.woff") format('woff');
+}
+
+@font-face{
+	font-family:"NotoSans";
+	font-weight:700;
+	font-style:normal;
+	src:url("/_res/hansang/etc/NotoSans-Regular.eot");
+	src:url("/_res/hansang/etc/NotoSans-Regular.eot?#iefix") format('embedded-opentype'),
+		url("/_res/hansang/etc/NotoSans-Regular.woff2") format('woff2'),
+		url("/_res/hansang/etc/NotoSans-Regular.woff") format('woff');
+}
+
+body{font-size:14px;font-weight:500;color:#333;font-family:"NanumGothic", "나눔고딕", Dotum, "돋움", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;}
+input,textarea,select, pre,button{font-size:1em;font-family:"NanumGothic", "나눔고딕", Dotum, "돋움", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;}
+input,textarea,select, img, label{vertical-align:middle;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+a,a:link,a:visited,a:hover,a:active{color:#333;text-decoration:none;}
+
+* {-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none;}
+
+/* 일본어 */
+body.jap .sub_contents, body.jap .sub_contents input, body.jap .sub_contents textarea, body.jap .sub_contents select, body.jap .sub_contents pre, body.jap .sub_contents button{font-family:"NotoSans", "본고딕", Dotum, "돋움", Gulim, "굴림", Tahoma, Verdana, AppleGothic, UnDotum, Arial;}
+
+/* hidden type */
+legend, .hidden{display:none !important;}
+caption{text-indent:-9999px;font-size:0;height:0;line-height:0;}
+.hide{position:absolute;top:-9999px;left:0;font-size:0;height:0;line-height:0;/* display:none; */}
+
+/* skip_menu */
+#skip_menu{position:fixed;top:-1px;left:0;width:100%;height:auto;text-align:center;z-index:9999}
+#skip_menu a{display:block;position:absolute;top:-30px;width:100%;height:1px;line-height:1px;background:#000;color:#fff;text-align:center}
+#skip_menu a:focus{top:0px;height:30px;line-height:2.1;z-index:9999}
+
+select{height:30px;border:1px solid #aaa;}
+select{padding:0 5px;}
+input[type="text"]{padding:0 10px;line-height:34px;height:34px;border:1px solid #aaa;}
+button, input[type="submit"]{text-align:center;vertical-align:middle;cursor:pointer;border:none;background:none;}
+textarea{padding:10px;line-height:1.3em;border:1px solid #aaa;}
+
+select {height:34px;line-height:34px;}

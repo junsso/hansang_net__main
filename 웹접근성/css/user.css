@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import url("http://www.hansang.net/_res/hansang/_css/contents.css");
+
+/* @import url("land_m.css"); */
+
+/* 게시판 테이블 */
+.newsT{width:100%;}
+.newsT th{text-align:center;font-weight:700;color:#fff !important;background-color:#a38f84;}
+.newsT th, .newsT td{padding:5px;border:1px solid #ddd !important;}
